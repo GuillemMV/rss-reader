@@ -1,0 +1,11 @@
+html{
+    font-family: Arial;
+    background-color: #202020;
+}
+.menu{
+    background-color: antiquewhite;
+    padding: 20px;
+    max-width: 100px;
+    justify-content: space-between;
+    
+}
