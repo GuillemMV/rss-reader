@@ -2,35 +2,42 @@ html{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #101010;
     color: #dddddd;
+    margin: 0;
 }
-header{
+header div a:hover{
+    color: tomato;
+}
+.page{
     display: flex;
-    border: 1px solid black;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    max-width: 50%;
-    margin: auto;
-    padding: 20px;
-    background-color: #151515;
-}
-header div a{
-    padding: 10px;
-    text-decoration: none;
-    font-weight: 700;
 }
 main{
-    max-width: 50%;
-    margin: auto;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    width: 70%;
     padding: 20px;
     background-color: #202020;
+    margin: auto;
 }
-.titulo{
-    background-color: #101010;
+.page-title{
+    text-align: center;
+    margin: 0;
+    color: tomato;
+    padding: 0;
 }
-
+.entrada{
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 600;
+}
 .fecha{
     font-style: italic;
+}
+.sidebar{
+    font-family: monospace;
+    width: 15%;
+    z-index: 2;
+    background-color: #202020;
+    margin: 0;
+}
+.sidebar ul li{
+    list-style: none;
+    padding: 3px;
 }

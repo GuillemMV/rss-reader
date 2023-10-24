@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rss-reader</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="page">
+        <div class="sidebar">
+            <img src="../static/img/logo.png" alt="" width="280px" height="50px">
+            <ul>
+                <li>Diari Camp de Tarragona</li>
+                <li>Diari de Tarragona</li>
+                <li>El País</li>
+                <li>Aemet</li>
+            </ul>
+        </div>
+        <main>
+            <div class="page-title">
+                <h2>Diari de Tarragona</h2>
+                <hr/>
+            </div>
+            {% for titulo, fecha in entradas %}
+                <ul>
+                    <a href="" class="entrada"><li>{{ titulo }} - {{ fecha }}</li></a>
+                </ul>
+            {% endfor %}
+        </main>
+    </div>
+</body>
+</html>
